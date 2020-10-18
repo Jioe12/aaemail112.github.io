@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="favicon2.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+<link rel="stylesheet" href="css.css">
+    <title>Boxing -Universitas Ma Chung</title>
+
+ <style>
+ body{
+     margin:0;
+     background:black;
+ }
+ 
+ </style>   
+</head>
+    
+<body>
+    <header class="header">
+        
+        <a href="index.html"><img class="logo" src="header1.png"></a>
+        <table width=100%></table>
+        <tr><td>
+        <ul>
+        <li><a class="x1" href=index.html> Home</a></li>
+        <li><a class="x1" href=events.html>Events</a></li> 
+        <li><a class="x1" href=registration.html><span class="regisfont">Registration</a></span></li>
+        <li><a class="x1" href=contactus.html> Contact Us</a></li>
+        <li><a class="x1" href=aboutus.html> About Us</a></li>
+        <span id="date" class="header2"></span>
+        </ul>
+            <td>
+        <hr/>
+    </header>
+    <div class="mid" >
+        <div class="card">
+            <div class="konten">
+                <div class="judul">
+                    <h1>REGISTRATION</h1>
+                    <div class="underline"></div>
+                </div>
+                <form class="form">
+                    <label style="padding-top:13px">&nbsp;Email</label>
+                <input id="email" class="formconten"type="email"name="email" value="" required/>
+                
+                <div class="formborder"></div>
+                <label style="padding-top:22px">&nbsp;No Telp</label>
+                <input id="notelp" class="formconten" value="" type = "tel" pattern = "^ \ d {10} $"required>
+                <div class="formborder"></div>
+                <input onclick="tes()" class="submitbtn" type="submit" name="submit" value="SUBMIT" required/>
+</form>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script>
+        var a = new Date();
+        document.getElementById("date").innerHTML = a;
+
+        function tes(){
+	    var aa = document.getElementById("email").value;
+        var bb = document.getElementById("notelp").value;
+
+        if (aa != ""){
+
+            alert("Terima Kasih telah mendaftar" +" "+ a);
+        }
+        else {
+            alert("failed");
+        }
+} 
+
+    var a = new Date();
+    document.getElementById("date").innerHTML = a;
+    
+    </script>
+
+</body>
+</html>

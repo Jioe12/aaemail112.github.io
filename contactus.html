@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="favicon2.ico">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap">
+<link rel="stylesheet" href="css.css">
+    <title>Boxing -Universitas Ma Chung</title>
+
+ <style>
+ body{
+    margin:0;
+    background:black;
+    
+ }
+
+ </style>   
+</head>
+    
+<body>
+    <header class="header">
+        
+        <a href="index.html"><img class="logo" src="header1.png"></a>
+        <table width=100%></table>
+        <tr><td>
+        <ul>
+        <li><a class="x1" href=index.html> Home</a></li>
+        <li><a class="x1" href=events.html>Events</a></li> 
+        <li><a class="x1" href=registration.html>Registration</a></li>
+        <li><a class="x1" href=contactus.html><span class="contactus"> Contact Us</a></span></li>
+        <li><a class="x1" href=aboutus.html> About Us</a></li>
+        <span id="date" class="header2"></span>
+        </ul>
+            <td>
+        <hr/>
+    </header>
+    
+        <div class="mid2">
+            <div class="card2">
+                <div class="xx">
+                OUR <br>
+                LOCATION<br><br></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.402494501888!2d112.58683485039545!3d-7.95729098146724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e78825bc65e176b%3A0x954b33ee83283be2!2sUniversitas%20Ma%20Chung!5e0!3m2!1sen!2sid!4v1602985261076!5m2!1sen!2sid" 
+        width="500" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <br><br>        
+        <div class="x2">T : (0341) 550 171<br>
+                Email: info@machung.ac.id </div>
+    </div>
+    <div class="mid3">
+        <div class="card3">
+            <div>
+                
+            <form class="form">
+                <label style="padding-top:13px">&nbsp;Your Name</label>
+                <input id="nama" class="formconten" type="text" name="name" value="" required/>
+                <div class="formborder"></div>
+                <label style="padding-top:13px">&nbsp;Email Address</label>
+                <input id="email" class="formconten"type="email"name="email" value="" required/>
+            
+            <div class="formborder"></div>
+            <label style="padding-top:22px">&nbsp; Message</label>
+            <textarea id="textarea"></textarea>
+            
+            <input onclick="tes()" class="submitbtn" type="submit" name="submit" value="SUBMIT" required/>
+</form></div>
+        </div>
+    </div>
+</div>
+<script>
+    function tes(){
+	    var aa = document.getElementById("nama").value;
+        var bb = document.getElementById("email").value;
+        var cc = document.getElementById("textarea").value;
+
+        if (aa != ""){
+
+            alert("Succes");
+        }
+        else {
+            alert("Failed");
+        }
+} 
+    var a = new Date();
+    document.getElementById("date").innerHTML = a;
+
+</script>
+
+</body>
+</html>
